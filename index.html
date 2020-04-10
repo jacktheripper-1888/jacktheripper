@@ -45,10 +45,23 @@
       <li>
         <a href="#slide1"><img src="assets/imgs/1.jpg" alt="Welcome to Jack the Ripper in Popular Culture!"></a>
       </li>
-      <li>
-        <a href="#slide2"><img src="assets/img/slide/2.jpg" alt="Explore art and media connected to the infamous serial killer."></a>
-      </li>
     </ul>
   </section>
+ <script>
+    $(document).ready(function () {
+      $('#slippry-slider').slippry(
+        defaults = {
+          transition: 'vertical',
+          useCSS: true,
+          speed: 5000,
+          pause: 3000,
+          initSingle: false,
+          auto: true,
+          preload: 'visible',
+          pager: false,
+        }
+      )
+    });
+  </script>
 </body>
 </html>
