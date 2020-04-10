@@ -3,3 +3,5 @@ markdown: kramdown
 title: Jack the Ripper in Popular Culture
 description: This website was created with the aim of presenting and connecting various manifestations of artworks connected to the infamous serial killer. 
 
+
+theme: jekyll-theme-minimal
