@@ -1,22 +1,22 @@
 ::-moz-selection {
-  background: #5C9F24;
+  background: #920000;
 }
 ::selection {
-  background: #5C9F24;
+  background: #920000;
 }
 
 a {
-  color: #5C9F24;
+  color: #920000;
 }
 
 a:hover {
-	color: #33782D;
+	color: #920000;
 }
 
 /* --- button theme --- */
 .btn-theme {
-  background: #5C9F24;
-  *background-color: #5C9F24;
+  background: #920000;
+  *background-color: #920000;
 }
 
 .btn-theme:hover,
@@ -24,42 +24,42 @@ a:hover {
 .btn-theme.active,
 .btn-theme.disabled,
 .btn-theme[disabled] {
-  background: #33782D;
-  *background: #33782D;
+  background: #920000;
+  *background: #920000;
 }
 
 .scrollup {
- background-color: #5C9F24;
+ background-color: #920000;
 }
 
 /* fontawesome icons */
 [class^="icon-"].active,
 [class*=" icon-"].active {
-    background-color: #5C9F24;
+    background-color: #920000;
 }
 
 
 ul.nav li.current {
-  color: #5C9F24;
+  color: #920000;
 }
 
 .navbar .nav > li > a:hover,
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:active,
 .navbar .nav > li.active > a {
-    color: #5C9F24 !important;
+    color: #920000 !important;
 }
 
 .sy-pager li.sy-active a {
-  background-color: #5C9F24;
+  background-color: #920000;
 }
 
 .navbar .nav > li > a:hover {
-  color: #5C9F24;
+  color: #920000;
 }
 
 input:focus {
-	border: 1px solid #5C9F24;
+	border: 1px solid #920000;
 	border-width:1px;
 }
 textarea:focus,
@@ -78,22 +78,22 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
-  border-color: #5C9F24;
+  border-color: #920000;
 }
 
 
 /* tab */
 
 .nav-tabs > a {
-	color:#5C9F24;
+	color:#920000;
 }
 
 
 /* accordion */
 .accordion-heading a:hover {
-	color: #5C9F24;
+	color: #920000;
 }
 .accordion-heading .active{
-	color: #5C9F24;
+	color: #920000;
 }
 
