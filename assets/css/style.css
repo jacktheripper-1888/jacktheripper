@@ -345,35 +345,35 @@ font-size: 48px;
 /* =======================================
 3. Section: About
 ======================================== */
-.team-box {
+.item-box {
 	background: #f5f5f5;
 	padding-bottom: 20px;
 }
 
-.roles {
+.items {
 	padding-top: 10px;
 	text-align:center;
 }
 
-ul.social-profile {
+ul.links {
 	list-style:none;
 	margin-left:0;
 	padding: 0;
 }
 
-ul.social-profile li {
+ul.links li {
 	display:inline;
 	margin: 0 5px;
 	padding: 0;
 }
 
-ul.social-profile li a:hover {
+ul.links li a:hover {
 	text-decoration:none;
 }
 
 
 /* =======================================
-3. Section: Services
+3. Section: Project
 ======================================== */
 
 .box {
@@ -701,7 +701,7 @@ ul.the-icons {
 	border-style:solid;
 }
 
-/*========== works ==================*/
+/*========== project ==================*/
 
 
 .grid {
@@ -1161,7 +1161,7 @@ a.socialIcon:hover, .socialHoverClass {
 		top: 30%;
 		line-height: 1.1em;
 	}	
-	.team-box {
+	.item-box {
 		margin-bottom:20px;
 	}
 
