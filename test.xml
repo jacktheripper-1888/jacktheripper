@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+      <rdf:RDF
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ 	        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+            xmlns:foaf="http://xmlns.com/foaf/spec//index.rdf"
+            xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+            xmlns:dcterms="http://purl.org/dc/terms/"
+            xmlns:cidoc-crm="http://cidoc-crm.org/cidoc-crm/"
+            xmlns:dbo="http://dbpedia.org/ontology/"
+        
+        <rdf:Description rdf:about="http://semanticweb.org/jacktheripper-1888/From_Hell">
+        
+          <rdf:type rdf:resource="xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+          
+<cidoc-crm:title>From Hell</cidoc-crm:title>       
+<foaf:isPrimaryTopicOf>”https://en.wikipedia.org/wiki/From_Hell_(film)” </foaf:isPrimaryTopicOf>
+<dcterms:abstract>”In 1888 London’s Whitechapel slums, poor women like Mary Kelly and her friends walk the streets for a living. When the streetwalkers begin to be murdered one by one, it attracts the attention of Inspector Abberline, who takes a personal interest in the case, and Mary Kelly. Now he must use his psychic abilities to stop the most notorious serial killer in history--Jack the Ripper--before Mary is killed.”  </dcterms:abstract>
+<dcterms:creator>”Hughes Brother” </dcterms:creator>
+<cidoc-crm:actor>”Jonny Depp” </cidoc-crm:actor>
+<dctems:medium>”DVD”</dctems:medium>
+<rdfs:seeAlso>”https://en.wikipedia.org/wiki/From_Hell, https://en.wikipedia.org/wiki/From_Hell_letter”</rdfs:seeAlso>
+<skos:related>”Alan Moore”</skos:related>
+ </rdf:description>
+</rdf:RDF>
+
