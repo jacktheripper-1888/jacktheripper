@@ -1,0 +1,28 @@
+﻿QUESTION;PREDICATE;"""Dear Boss"" letter";
+What type of entity?;crm:type;document-correspondence;document-correspondence
+Who is the author?;ead:<author>;Jack the Ripper;Jack the Ripper
+What is the subject?;dcterms: subject;murder;murder
+What is the description?;ead:<did>;Letter attributed to Jack the Ripper addressed to the Central News Agency of London.;Letter attributed to Jack the Ripper addressed to the Central News Agency of London.
+What is the language of the subject?;ead:<langmaterial>;English;English
+What is the medium?;dcterms: medium;paper;paper
+What event is related to the subject?;p69_has association with;Whitechapel Murders;Whitechapel Murders
+What are the places related to the subject?;ead: <geogname>;Whitechapel, London, England;Whitechapel, London, England
+   ---what other resources is the place related to?;dc: relation;Saucy Jack ;Saucy Jack 
+  ---- who is the author?;ead: <author>;Jack the Ripper;Jack the Ripper
+   ---what is the type of the resource?;crm:type;document-postcard;document-postcard
+   ---when was it created?;ead:<date>;1 October 1888;1 October 1888
+   ---which resource has the subject as the primary topic?;gn:wikipediaArticle;https://en.wikipedia.org/wiki/Saucy_Jacky_postcard;https://en.wikipedia.org/wiki/Saucy_Jacky_postcard
+    ---what are other related resources?;rdfs: seeAlso;From Hell (letter);From Hell (letter)
+    ---which resource has the subject as its primary topic?;skos:isTopConceptOf;https://en.wikipedia.org/wiki/From_Hell_letter;https://en.wikipedia.org/wiki/From_Hell_letter
+When was it created? ;ead: <date>;25 September 1888;25 September 1888
+   ---what event happened during the creation?;crm:P117 occurs during ;Whitechapel Murders;Whitechapel Murders
+What is the location of the subject?;edm:currentLocation;Jack the Ripper Museum;Jack the Ripper Museum
+   ----- In which city is the location?;dbo:City;London;London
+   ---- In which country is the location? ;dbo:Country;England;England
+Which institution is the provider of the subject?;edm:provider;National Archives, UK;National Archives, UK
+    ---what resources are connected to the provider?;skos:related;https://www.nationalarchives.gov.uk/;https://www.nationalarchives.gov.uk/
+Which resource has the subject as primary topic?;foaf:isPrimaryTopicOf;https://en.wikipedia.org/wiki/Dear_Boss_letter;https://en.wikipedia.org/wiki/Dear_Boss_letter
+What are other useful references for the resource?;rdfs: seeAlso;http://www.nationalarchives.gov.uk/museum/additional_image_types.asp?item_id=39&image_id=50&extra_image_type_id=1;http://www.nationalarchives.gov.uk/museum/additional_image_types.asp?item_id=39&image_id=50&extra_image_type_id=1
+;;;
+;;;
+;;;
