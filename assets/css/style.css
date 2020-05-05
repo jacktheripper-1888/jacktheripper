@@ -765,6 +765,10 @@ ul.the-icons {
     opacity:0.2    
 }
 
+.code {
+	display: block;
+	padding: 1em;
+}
 
 /* ============== contact ==================== */
 .validation {
