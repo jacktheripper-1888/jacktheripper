@@ -305,18 +305,19 @@
       <div class="heading">
         <h3><span>Theoretical and E/R Models</span></h3>
       </div>
+      <p>An entity-relationship model (or ER model) describes interrelated things of interest in a specific domain of knowledge(<a href=" The Entity-Relationship Model: Toward a Unified View of Data">source</a>).</p>
+      <p>A basic ER model is composed of entity types (which classify the things of interest) and specifies relationships that can exist between entities (instances of those entity types).(<a href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model">source</a>)
+        We decided that the concept of "Jack the Ripper" has a central position, so we connected the related items and assets to it.</p>
+        
+        <p>As can be seen, the first diagram is a model that represents our idea in more specific, more detailed terms.</p>
       <div class="sub-heading">
         <div class="row">
           <div class="col-md-12">
             <ul class="grid effect" id="grid">
-              <li><a href="assets/img/portfolio/jack e_r.png" class="fancybox" data-fancybox-group="gallery" title="E/R model"><img
-                    src="assets/img/portfolio/jack e_r.png" alt="E/R model" /></a></li>
-              <li><a href="assets/img/portfolio/jack_the.png" class="fancybox" data-fancybox-group="gallery" title="Theoretical model"><img
-                    src="assets/img/portfolio/jack_the.png" alt="Theoretical model"/></a></li>
-                    <li><a href="assets/img/portfolio/rdf.jpg" class="fancybox" data-fancybox-group="gallery" title="XML/RDF"><img
-                      src="assets/img/portfolio/rdf.jpg" alt="XML/RDF"/></a></li>
-              <li><a href="assets/img/portfolio/graph.png" class="fancybox" data-fancybox-group="gallery" title="Graph"><img
-                    src="assets/img/portfolio/graph.png" alt="Graph visualization"/></a></li>
+              <li><a href="assets/img/portfolio/E_R Model-2.png" class="fancybox" data-fancybox-group="gallery" title="E/R model"><img
+                    src="assets/img/portfolio/E_R Model-2.png" alt="E/R model" /></a></li>
+              <li><a href="assets/img/portfolio/Theoretical Model.png" class="fancybox" data-fancybox-group="gallery" title="Theoretical model"><img
+                    src="assets/img/portfolio/Theoretical Model.png" alt="Theoretical model"/></a></li>
             </ul>
           </div>
         </div>
@@ -347,6 +348,13 @@
     <div class="heading">
       <h3><span>Conceptual model and data description</span></h3>
     </div>
+    <p>We have chosen to describe three items based on the following criteria:</p>
+      <ol>
+        <li>the items must be of different type,</li>
+        <li>the items must come from different institutions,</li>
+        <li>the items must be able to <b>connect different items, people and places</b></li>
+      </ol>
+    <p>in order to create a rich and varied knowledge graph in the end that describes relationships between items, people and places. Thus, we have chosen one of the letters written by Jack the Ripper; From Hell, a movie about the serial killer; and an artwork called Tomb of Jack the Ripper.</p>
       <div class="sub-heading">
         <div class="nav-pills nav-justified" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <a class="nav-link active" id="v-pills-hom-tab" data-toggle="pill" href="#v-pills-hom" role="tab" aria-controls="v-pills-hom" aria-selected="true">Dear Boss letter</a>
@@ -371,13 +379,13 @@
     <h3><span>Links and interconnections</span></h3>
   </div>
   <div class="sub-heading">
-    <p>Expressing interconnections and links between data was conducted by applying predicates from various vocabularies. As the chart shows, <b>rdfs:seeAlso</b> and <b>foaf:PrimaryTopicOf</b> were the most common ones as they are suitable for connecting concepts and people. For example, in the case of the letters attributed to Jack the Ripper, we have included only one of them (<i>Dear Boss</i>) in the collection of items but through the data description with all of the three letters (<i>Dear Boss, From Hell, Saucy Jack</i>) have been presented and interconnected. Apart from these two predicates,<b> gn:WikipediaArticle</b> and </b>dc:relation have been used to most. The latter can express a wide variety of connections, therefore it is suitable for most types of data connections. On the other hand, the former is quite specific, connecting a concept, person, date or place with its Wikipedia page. This also provides a sort of meta-level connection since Wikipedia articles are rich sources of related materials. Cidoc-crm’s <b>occurs during</b> predicate provides an interesting perspective as we can use it to connect events and time-periods that took place simultaneously. Similarly, Cidoc-crm’s <b>has association with</b> predicate was useful to connect people, concepts and events that are related, even if not in very obvious ways. A good example would be the movie entitled From Hell which is loosely based on a graphic novel with the same title which was inspired by the letter with the same title written by Jack the Ripper. Lastly, <b>skos:related and edm:isRelatedTo</b> were used less often but as we can easily align them with DCMI’s relation, these three predicates that express fairly general concepts can be used interchangeably.</p>
+    <p>Expressing interconnections and links between data was conducted by applying properties from various vocabularies. As the chart shows, <b>rdfs:seeAlso</b> and <b>foaf:PrimaryTopicOf</b> were the most common ones as they are suitable for connecting concepts and people. For example, in the case of the letters attributed to Jack the Ripper, we have included only one of them (<i>Dear Boss</i>) in the collection of items but through the data description with all of the three letters (<i>Dear Boss, From Hell, Saucy Jack</i>) have been presented and interconnected. Apart from these two predicates,<b> gn:WikipediaArticle</b> and </b>dc:relation have been used to most. The latter can express a wide variety of connections, therefore it is suitable for most types of data connections. On the other hand, the former is quite specific, connecting a concept, person, date or place with its Wikipedia page. This also provides a sort of meta-level connection since Wikipedia articles are rich sources of related materials. Cidoc-crm’s <b>occurs during</b> predicate provides an interesting perspective as we can use it to connect events and time-periods that took place simultaneously. Similarly, Cidoc-crm’s <b>has association with</b> predicate was useful to connect people, concepts and events that are related, even if not in very obvious ways. A good example would be the movie entitled From Hell which is loosely based on a graphic novel with the same title which was inspired by the letter with the same title written by Jack the Ripper. Lastly, <b>skos:related and edm:isRelatedTo</b> were used less often but as we can easily align them with DCMI’s relation, these three predicates that express fairly general concepts can be used interchangeably.</p>
     <img width="80%" src="assets/img/data.jpg">
   </div>
 </div>
 </div>
 <div class="heading">
-  <h3><span>RDF</span></h3>
+  <h3><span>RDF TURTLE</span></h3>
 </div>
 <div class="sub-heading">
   <p>Semantic information helps computers understand what we put on the web.
@@ -389,7 +397,11 @@
   <li><b>PREDICATES</b> refers to an attribute of the thing that you are describing</li>
   <li><b>OBJECTS</b> is the thing that you're referring to with the predicate.(<a href="https://www.w3schools.com/xml/xml_rdf.asp">W3schools</a>)</li>
   </p>
-  <script src="https://gist.github.com/jacktheripper-1888/gist-id.js"></script>
+  <P>A Turtle document is a textual representation of an RDF graph (<a href="https://www.w3schools.com/xml/xml_rdf.asp">W3schools</a>). 
+    A graph is made up of triples consisting of a subject, predicate, and object.
+    So the simplest triple statement is a sequence of (subject, predicate, object) terms, separated by whitespace and terminated by '.' after each triple(<a href="https://www.w3.org/TR/turtle/">W3schools</a>).</P>
+  <h3><span>RDF GRAPH</span></h3>
+  <img width=70% src="assets/img/rdf-graph.png">
 </div>
 </div>
 </div>
