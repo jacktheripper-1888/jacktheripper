@@ -1,0 +1,18 @@
+﻿PLACE;GEONAMES;EDM;CIDOC CRM;IPTC;EAD;MARC21;DCMI;ISBD;;;;;;;;;;;;;;
+Place;gn:name;edm:Place;;11.9. Location structure;<geogname>;752 Added entry--hierarchical place name;;has place of publication, production, distribution statement;;;;;;;;;;;;;;
+Country;;edm:country;;11.9.3. Country Name;;;;;;;;;;;;;;;;;;
+City;;;;11.9.1. City;;;;;;;;;;;;;;;;;;
+(Current) Location;;edm:currentLocation;P55 has current location (currently holds);10.19. Location created;;;dcterms:location;;;;;;;;;;;;;;;
+Location of originals;;;;;<originalsloc>;535 Location of Originals/Duplicates;;;;;;;;;;;;;;;;
+Location of event;;;P7 took place at (witnessed);;;;;4.1 Place of publication, distribution, etc. ;;;;;;;;;;;;;;
+;;;;"
+";;;;;;;;;;;;;;;;;;
+TIME;;;;;;;;;;;;;;;;;;;;;;
+Timespan;;edm:TimeSpan;P4 has time-span (is time-span of): E52 Time-Span;11.1.11. Date Created;;;dcterms:extent;;;;;;;;;;;;;;;
+Year;;edm:year;;;;;;;;;;;;;;;;;;;;
+Events that happen simultaneously;;;P117 occurs during (includes)P119 meets in time with (is met in time by);;;;;;;;;;;;;;;;;;;
+Beginning;;;P116 starts (is started by);;<fromdate>;;;;;;;;;;;;;;;;;
+Ending;;;P115 finishes (is finished by);;<todate>;;;;;;;;;;;;;;;;;
+Period;;;E4 Period;11.1.16. Style Period;<daterange>;;dcterms:PeriodOfTime;;;;;;;;;;;;;;;
+Date;;;;;<date>;260$c Date;dcterms:date;4.4 Date of publication, distribution, etc.;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;
