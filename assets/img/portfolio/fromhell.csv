@@ -1,0 +1,35 @@
+﻿QUESTION;PREDICATE;"""From Hell"" movie"
+What is the title?;dcterms:title;From Hell
+What type of entity?;rdf:type;movie
+What is the genre?;ead:<genreform>;thriller
+What is the medium?;dcterms:medium;DVD 
+What is the subject?;dcterms:subject;Whitechapel Murders
+What is the description?;rdf:Description ;Film based on the From Hell graphic novel by Alan Moore which depicts the Jack the Ripper murders.
+Who is the creator?;dcterms:creator;Hughes Brothers
+Which persons are related to the subject?;skos:related;Johnny Depp
+What is the language of the subject?;xsd:language;English
+When was the subject created?;ead:<date>;October 19, 2001
+Where was the subject created?;gn:name;United States
+What was the subject based on?;crm:P136_was based on;From Hell 
+  ----- what is the type of the subject?;rdfs:type;graphic novel
+  ----- who is the author?;dcterms: author; Alan Moore
+   ---- what is the date of publication?;edm:TimeSpan;1989–1996
+  ------which resource has the subject as primary topic?;foaf:IsPrimaryTopicOf;https://en.wikipedia.org/wiki/From_Hell
+What was the subject inspired by?;dcterms:relation;From Hell 
+    ----- what type of entity is the subject?;rdf:type;document - correspondence
+    ----- who is the author of the subject?;ead:<author>;Jack the Ripper
+    ----- when was the subject created?;ead:<date>;15 October 1888 
+    ----- what is the description of the subject?;rdf:Description ;Letter attributed to Jack the Ripper. A human organ was attached to the letter.
+    ----- what are some useful resources for the subject?;rdfs:seeAlso;https://en.wikipedia.org/wiki/From_Hell_letter
+    ----- what other resources is the subject related to?;skos:related;Dear Boss letter
+Which persons are depicted in the subject?;foaf:name;Jack the Ripper, Mary Kelly
+Which places are depicted in the subject?;crm:P7 took place at;Whitechapel, London, England
+   ------What is the description of the place?;rdf:Description ;A district of London populated by poor workers in the 18th-20th century.
+   -----What is the Wikipedia page of the place?;gn:wikipediaArticle;https://en.wikipedia.org/wiki/Whitechapel
+Which period is the subject associated with?; crm:E5_period;Victorian era
+   ----- when did this period take place?;edm:TimeSpan;1837–1901
+   ----- what events occur during this period?;crm:P117 occurs during;Whitechapel Murders
+Which resource has the subject as its primary topic?;foaf:IsPrimaryTopicOf;From Hell (film)
+    ------Which resource has the subject as its primary topic?;ead:<href>;https://en.wikipedia.org/wiki/From_Hell_(film)
+What are other useful resources? ;rdf:seeAlso;Jack the Ripper (miniseries)
+  -------which resource has the subject as its primary topic? ;gn:wikipediaArticle;https://en.wikipedia.org/wiki/Jack_the_Ripper_(miniseries)

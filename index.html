@@ -79,8 +79,7 @@
             The aim of this project is to (1) present 10 art and media <a href=#items>items</a> related to the Victorian-era serial killer, Jack the Ripper that appear in popular culture and (2)to create a network of connections between them and the historical events various knowledge organization methods.
             After analysing the concept of the Whitechapel Murders and relating it to the relevant people, places, dates and context, we have connected them to the 10 chosen items. We have connected the data through an E/R model, a theoretical model. We have analyzed the data through a conceptual model and RDF. 
             Explore the process by clicking <a href=#project>here</a>.
-            This project has been created by two students of the Digital Humanities and Digital Knowledge program for the Knowledge Organization and Digital Methods in The Cultural Heritage Domain(professor: Francesca Tomasi) course at the University of Bologna. 
-            </p>
+            This project has been created by two students of the Digital Humanities and Digital Knowledge program for the Knowledge Organization and Digital Methods in The Cultural Heritage Domain(professor: Francesca Tomasi) course at the University of Bologna.</p>
           </div>
         </div>
       </div>
@@ -348,6 +347,10 @@
     <div class="heading">
       <h3><span>Conceptual model and data description</span></h3>
     </div>
+      <div class="container">
+        <p>The creation of a visual conceptual model was useful for data description as the different color codes stand for models that provided the predicates that were used in the following steps. The mind map-like representation and an outline is presented below:</p>
+      <div class="container">
+        <iframe src="http://www.xmind.net/embed/43rrgE" style="align-content: center;"    width="1100px" height="500px" frameborder="0" scrolling="no"></iframe>
         <p>We have chosen to describe three items based on the following criteria:</p>
           <ol>
             <li>the items must be of different type,</li>
@@ -355,6 +358,7 @@
             <li>the items must be able to <b>connect different items, people and places</b></li>
           </ol>
         <p>in order to create a rich and varied knowledge graph in the end that describes relationships between items, people and places. Thus, we have chosen one of the letters written by Jack the Ripper; From Hell, a movie about the serial killer; and an artwork called Tomb of Jack the Ripper.</p>
+      </div>
       <div class="sub-heading">
         <div class="nav-pills nav-justified" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <a class="nav-link active" id="v-pills-hom-tab" data-toggle="pill" href="#v-pills-hom" role="tab" aria-controls="v-pills-hom" aria-selected="true">Dear Boss letter</a>
@@ -362,12 +366,10 @@
           <a class="nav-link" id="v-pills-setting-tab" data-toggle="pill" href="#v-pills-message" role="tab" aria-controls="v-pills-message" aria-selected="false">Tomb of Jack the Ripper artwork</a>
         </div>
         <div class="tab-content" id="v-pills-tabContent">
-          <p> <a href="/assets/csv files/dear_boss.csv">CSV file.</a></p>
+          <p> <a href="csv.html">CSV files</a></p>
           <div class="tab-pane show active" id="v-pills-hom" role="tabpanel" aria-labelledby="v-pills-hom-tab"><img width="80%" src="assets/img/dearboss.png"></div>
-          <p><a href="/assets/csv files/tombofjack.csv">CSV file.</a></p>
-          <div class="tab-pane" id="v-pills-message" role="tabpanel" aria-labelledby="v-pills-message-tab"><img width="80%" src="assets/img/tombofjack.png"></div>
-          <p><a href="/assets/csv files/fromhell.csv">CSV file.</a></p>
-          <div class="tab-pane" id="v-pills-profil" role="tabpanel" aria-labelledby="v-pills-profil-tab"><img width="80%" src="assets/img/fromhell.png"></div>
+          <div class="tab-pane" id="v-pills-message" role="tabpanel" aria-labelledby="v-pills-message-tab"><img width="80%" src="assets/img/tombofjack.png"><div>
+          <div class="tab-pane" id="v-pills-profil" role="tabpanel" aria-labelledby="v-pills-profil-tab"><img width="80%" src="assets/img/fromhell2.png"></div>
         </div>
         </ul>
       </div>
@@ -378,79 +380,37 @@
   <div class="heading">
     <h3><span>Links and interconnections</span></h3>
   </div>
-  <div class="sub-heading">
+  <div class="container">
     <p>Expressing interconnections and links between data was conducted by applying properties from various vocabularies. As the chart shows, <b>rdfs:seeAlso</b> and <b>foaf:PrimaryTopicOf</b> were the most common ones as they are suitable for connecting concepts and people. For example, in the case of the letters attributed to Jack the Ripper, we have included only one of them (<i>Dear Boss</i>) in the collection of items but through the data description with all of the three letters (<i>Dear Boss, From Hell, Saucy Jack</i>) have been presented and interconnected. Apart from these two predicates,<b> gn:WikipediaArticle</b> and </b>dc:relation have been used to most. The latter can express a wide variety of connections, therefore it is suitable for most types of data connections. On the other hand, the former is quite specific, connecting a concept, person, date or place with its Wikipedia page. This also provides a sort of meta-level connection since Wikipedia articles are rich sources of related materials. Cidoc-crm’s <b>occurs during</b> predicate provides an interesting perspective as we can use it to connect events and time-periods that took place simultaneously. Similarly, Cidoc-crm’s <b>has association with</b> predicate was useful to connect people, concepts and events that are related, even if not in very obvious ways. A good example would be the movie entitled From Hell which is loosely based on a graphic novel with the same title which was inspired by the letter with the same title written by Jack the Ripper. Lastly, <b>skos:related and edm:isRelatedTo</b> were used less often but as we can easily align them with DCMI’s relation, these three predicates that express fairly general concepts can be used interchangeably.</p>
-    <img width="80%" src="assets/img/data.jpg">
-  </div>
+<div class="container">
+  <img src="assets/img/data.jpg">
+</div>
+</div>
 </div>
 </div>
 <div class="heading">
   <h3><span>RDF TURTLE</span></h3>
 </div>
-<div class="sub-heading">
-  <p>Semantic information helps computers understand what we put on the web.
-    RDF stands for "Resource Description Framework."</p>
-  <p>What is RDF exactly?</p>
-  <p>RDF is a standard model for data interchange on the Web. RDF has features that facilitate data merging even if the underlying schemas differ.It specifically supports the evolution of schemas over time without requiring all the data consumers to be changed.</p>
-  <p>RDF extends the linking structure of the Web to use URIs to name the relationship between things.It can describe any concept or thing that exists in the universe. The idea behind RDF is simple and it thus very easy. There are 3 things in RDF:</p>
-  <li><b>SUBJECTS</b> refers to the thing that you are describing</li>
-  <li><b>PREDICATES</b> refers to an attribute of the thing that you are describing</li>
-  <li><b>OBJECTS</b> is the thing that you're referring to with the predicate.(<a href="https://www.w3schools.com/xml/xml_rdf.asp">W3schools</a>)</li>
-  </p>
-  <p>A Turtle document is a textual representation of an RDF graph (<a href="https://www.w3schools.com/xml/xml_rdf.asp">W3schools</a>). 
-    A graph is made up of triples consisting of a subject, predicate, and object.
-    So the simplest triple statement is a sequence of (subject, predicate, object) terms, separated by whitespace and terminated by '.' after each triple(<a href="https://www.w3.org/TR/turtle/">W3schools</a>).</p>
-      <code><pre>
-      @base <http://jacktheripper-1888.github.io/>.
-      @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
-      @prefix dbc: <hthttp://dbpedia.org/resource/Category/>.
-      @prefix dbr: <http://dbpedia.org/resource/>.
-      @prefix dc: <http://purl.org/dc/terms/>.
-      @prefix dc: <http://purl.org/dc/terms/creator/>.
-      @prefix ead: <http://www.loc.gov/ead/>.
-      @prefix edm: <https://www.europeana.eu/en/>.
-      @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-      @prefix wn:<http://www.w3.org/2006/03/wn/wn20/schema/>.
-      @prefix owl: <http://www.w3.org/2002/07/owl#>.
-      @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-      @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-      @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-      @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-      @prefix dc: <http://purl.org/dc/elements/1.1/date>.
-      @prefix gn: <http://www.geonames.org/>.
-      @prefix dc: <http://purl.org/dc/elements/1.1/publisher>.
-      
-      <production/Statue>
-              rdf:type crm:E12_Production;
-              crm:entity "artwork";
-              dc:title "Tomb of Jack the Ripper";
-              dc:creator "Marcel Marien";
-              ead:genreform "Surrealism";
-              rdfs:seeAlso "https://en.wikipedia.org/wiki/Surrealism";
-              edm:provider "Tate, London";
-              ead:href "https://www.tate.org.uk/";
-              gn:name "London,England";
-              ead:date "1976";
-              edm:isrelatedto "Jack the Ripper";
-              crm:P15_was_influenced_by "Whitechapel Murders";
-              rdfs:seeAlso "Jack the Ripper (painting)";
-              rdf:type "Painting";
-              dc:medium "Paper";
-              dc:creator "Montelius Olle";
-              foaf:isPrimaryTopicOf "http://worldcat.org/identities/lccn-n85219099/";
-              edm:provider "Swedish Open Cultural Heritage";
-              dc:publisher "Goteborgs stadsmuseum";
-              gn:name "Sweden";
-              edm:year "2002";
-              dc:identifier "http://kulturarvsdata.se/GSM/objekt/292791";
-              dc:isPartOf "http://kulturarvsdata.se/GSM/samling/7";
-              foaf:isPrimaryTopicOf "https://www.tate.org.uk/art/artworks/marien-the-tomb-of-jack-the-ripper-t12048";
-              rdfs:seeAlso "Marcel Marien";
-              gn:wikipediaArticle "https://en.wikipedia.org/wiki/Marcel_Mari%C3%Abn".
-      </pre></code>
-
-  <h3><span>RDF GRAPH</span></h3>
-  <img width=70% src="assets/img/rdf-graph.png">
+<div class="container">
+    <p>Semantic information helps computers understand what we put on the web.
+      RDF stands for "Resource Description Framework."</p>
+    <p>What is RDF exactly?</p>
+    <p>RDF is a standard model for data interchange on the Web. RDF has features that facilitate data merging even if the underlying schemas differ.It specifically supports the evolution of schemas over time without requiring all the data consumers to be changed.</p>
+    <p>RDF extends the linking structure of the Web to use URIs to name the relationship between things.It can describe any concept or thing that exists in the universe. The idea behind RDF is simple and it thus very easy. There are 3 things in RDF:</p>
+    <li><b>SUBJECTS</b> refers to the thing that you are describing</li>
+    <li><b>PREDICATES</b> refers to an attribute of the thing that you are describing</li>
+    <li><b>OBJECTS</b> is the thing that you're referring to with the predicate.(<a href="https://www.w3schools.com/xml/xml_rdf.asp">W3schools</a>)</li>
+    </p>
+    <p>A Turtle document is a textual representation of an RDF graph (<a href="https://www.w3schools.com/xml/xml_rdf.asp">W3schools</a>). 
+      A graph is made up of triples consisting of a subject, predicate, and object.
+      So the simplest triple statement is a sequence of (subject, predicate, object) terms, separated by whitespace and terminated by '.' after each triple(<a href="https://www.w3.org/TR/turtle/">W3schools</a>).</p>
+    <img src="assets/img/portfolio/RDF turtle.png">
+</div>
+  <div class="heading">
+    <h3><span>RDF GRAPH</span></h3>
+    <div class="container">
+      <img width="60%" src="assets/img/rdf-graph.png">
+    </div>
 </div>
 </div>
 </div>
@@ -474,15 +434,18 @@
       </div>
     </div>
         </div>
-		<!--contacts-->
-		<div class="col-md-6">
+    <!--contacts-->
+    <div class="container">
+		  <div class="col-md-6">
 			<h4>Creators of the project</h4>
-      <ul>
-      <li><p>Deniz Tural</p> <a href = "mailto: deniz.tural@studio.unibo.it">Send Email</a></li>
-      <img width="10%"src="assets/img/icon1.jpg">
-      <li><p>Szilvia Baráth</p><a href = "mailto: szilvia.barath@studio.unibo.it">Send Email</a></li>
-      <img width="10%"src="assets/img/icon2.jpg">
-    </ul>
+      <div class="col-md-3">
+      <p><b>Deniz Tural</b></p><img width="90%"src="assets/img/icon1.jpg"><br><p><i>E/R model, theoretical model, RDF turtle, RDF graph</i></p><br><a href = "mailto: deniz.tural@studio.unibo.it">Send Email</a>
+      
+      </div>
+      <div class="col-md-3">
+      <p><b>Szilvia Baráth</b></p><img width="90%"src="assets/img/icon2.jpg"><br><p><i>Metadata alignment, conceptual model, data description, webdesign</i></p><br><a href = "mailto: szilvia.barath@studio.unibo.it">Send Email</a>
+      
+      </div>
 	</div>
         <div class="col-md-6">
           <h4>Find us at the University of Bologna</h4>

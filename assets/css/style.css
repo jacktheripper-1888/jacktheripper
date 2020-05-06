@@ -770,6 +770,14 @@ ul.the-icons {
 	padding: 1em;
 }
 
+.iframe {
+	align: center !important;
+}
+
+.img {
+	align: center;
+}
+
 /* ============== contact ==================== */
 .validation {
 	display:none;
