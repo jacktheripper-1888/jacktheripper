@@ -1,0 +1,62 @@
+@base <http://jacktheripper-1888.github.io/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbc: <hthttp://dbpedia.org/resource/Category/>.
+@prefix dbr: <http://dbpedia.org/resource/>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dc: <http://purl.org/dc/terms/creator/>.
+@prefix ead: <http://www.loc.gov/ead/>.
+@prefix edm: <https://www.europeana.eu/en/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix wn:<http://www.w3.org/2006/03/wn/wn20/schema/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/date>.
+@prefix gn: <http://www.geonames.org/>.
+@prefix dc: <http://purl.org/dc/elements/1.1/publisher>.
+
+
+
+<production/Statue>
+        rdf:type crm:E12_Production;
+        crm:entity "artwork";
+        gn:name "London,England";
+        dc:title "Tomb of Jack the Ripper";
+        gn:name "Sweden";
+        edm:provider "Swedish Open Cultural Heritage";
+        dc:creator "Marcel Marien";
+        dc:identifier "http://kulturarvsdata.se/GSM/objekt/292791";
+        dc:isPartOf "http://kulturarvsdata.se/GSM/samling/7";
+        ead:date "1976";
+        ead:year "2002".
+
+<object/Statue>
+        rdf:type "painting";
+        dc:medium "Paper";
+        crm:entity "artwork";
+        dc:title "Tomb of Jack the Ripper";
+        ead:genreform "Surrealism";
+        rdfs:seeAlso "https://en.wikipedia.org/wiki/Surrealism";
+        dc:publisher "Goteborgs stadsmuseum";
+        rdfs:seeAlso "https://www.fourmilab.ch/babbage/sketch.html".
+
+
+<person/marcel_marien>
+        rdf:type foaf:Person;
+        owl:sameAs dbr:Marcel_Marien;
+        dc:creator "Montelius Olle";
+        gn:wikipediaArticle "https://en.wikipedia.org/wiki/Marcel_Mari%C3%Abn".
+
+
+<concept/jack_the_ripper>
+        crm:P15_was_influenced_by "Whitechapel Murders";
+        rdfs:subClassOf skos:Concept;
+        skos:related "populer culture";
+        dc:date "1888";
+        rdf:label "Jack the Ripper";
+        rdfs:comment "Artwork created by Belgian Surrealist artist, Marcel Marien in 1976, inspired by the Jack the Ripper murders.";
+        dc:creator "Marcel Marien";
+        foaf:isPrimaryTopicOf "https://www.tate.org.uk/art/artworks/marien-the-tomb-of-jack-the-ripper-t12048";
+        gn:wikipediaArticle "https://en.wikipedia.org/wiki/Marcel_Mari%C3%Abn".
