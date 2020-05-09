@@ -7,15 +7,15 @@
 @prefix ead: <http://www.loc.gov/ead/>.
 @prefix edm: <https://www.europeana.eu/en/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix wn:<http://www.w3.org/2006/03/wn/wn20/schema/>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix skos: <http://www.w3.org/2008/05/skos#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-@prefix dc: <http://purl.org/dc/elements/1.1/date>.
+@prefix wn: <http://www.w3.org/2006/03/wn/wn20/schema/>.
 @prefix gn: <http://www.geonames.org/>.
 @prefix dc: <http://purl.org/dc/elements/1.1/publisher>.
+
 
 
 
@@ -39,8 +39,8 @@
         dc:title "Tomb of Jack the Ripper";
         ead:genreform "Surrealism";
         rdfs:seeAlso "https://en.wikipedia.org/wiki/Surrealism";
-        dc:publisher "Goteborgs stadsmuseum";
-        rdfs:seeAlso "https://www.fourmilab.ch/babbage/sketch.html".
+        dc:publisher "Goteborgs stadsmuseum".
+     
 
 
 <person/marcel_marien>
@@ -51,6 +51,7 @@
 
 
 <concept/jack_the_ripper>
+        owl:Class crm:E73_Information_Object;
         crm:P15_was_influenced_by "Whitechapel Murders";
         rdfs:subClassOf skos:Concept;
         skos:related "populer culture";

@@ -321,7 +321,7 @@
         
       <p>As it can be seen, the first model below is an </b>E/R model</b> that represents the ideas connected to the topic in more specific, more detailed terms.</p>
       <div class="sub-heading">
-        <div class="row">
+        <div class="row aligncenter">
           <div class="col-md-12">
             <ul class="grid effect" id="grid">
               <li><a href="assets/img/portfolio/E_R Model-2.png" class="fancybox" data-fancybox-group="gallery" title="E/R model"><img
@@ -423,8 +423,95 @@
     <li><b>OBJECTS</b> is the thing that we are referring to with the predicate(<a href="https://www.w3schools.com/xml/xml_rdf.asp">W3schools</a>).</li>
     </p>
     <p>A Turtle document is a textual representation of an RDF graph (<a href="https://www.w3schools.com/xml/xml_rdf.asp">W3schools</a>). A graph is made up of triples consisting of a subject, predicate, and an object. So the simplest triple statement is a sequence of (subject, predicate, object) terms, separated by whitespace and terminated by '.' after each triple (<a href="https://www.w3.org/TR/turtle/">W3schools</a>).</p>
-    <img src="assets/img/portfolio/RDF turtle.png">
-    <p><a href="assets/img/@base _http___jacktheripper-1888.github.io___">Click here to view the RAW file.</a></p>
+    <p><a href="assets/img/rdf turtle raw">Click here to view the RAW file.</a></p>
+    <!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Turtle -->
+				<section id="main" class="wrapper">
+						<div class="inner">
+							<pre style="background-color:antiquewhite">
+								<code class="prettyprint">
+@base &lt;http://jacktheripper-1888.github.io/&gt;.
+@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt;.
+@prefix dbc: &lt;hthttp://dbpedia.org/resource/Category/&gt;.
+@prefix dbr: &lt;http://dbpedia.org/resource/&gt;.
+@prefix dc: &lt;http://purl.org/dc/terms/&gt;.
+@prefix dc: &lt;http://purl.org/dc/terms/creator/&gt;.
+@prefix ead: &lt;http://www.loc.gov/ead/&gt;.
+@prefix edm: &lt;https://www.europeana.eu/en/&gt;.
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt;.
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt;.
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;.
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;.
+@prefix skos: &lt;http://www.w3.org/2008/05/skos#&gt;.
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;.
+@prefix wn: &lt;http://www.w3.org/2006/03/wn/wn20/schema/&gt;.
+@prefix gn: &lt;http://www.geonames.org/&gt;.
+@prefix dc: &lt;http://purl.org/dc/elements/1.1/publisher&gt;.
+
+
+
+
+&lt;production/Statue&gt;
+        rdf:type crm:E12_Production;
+        crm:entity "artwork";
+        gn:name "London,England";
+        dc:title "Tomb of Jack the Ripper";
+        gn:name "Sweden";
+        edm:provider "Swedish Open Cultural Heritage";
+        dc:creator "Marcel Marien";
+        dc:identifier "http://kulturarvsdata.se/GSM/objekt/292791";
+        dc:isPartOf "http://kulturarvsdata.se/GSM/samling/7";
+        ead:date "1976";
+        ead:year "2002".
+
+&lt;object/Statue&gt;
+        rdf:type "painting";
+        dc:medium "Paper";
+        crm:entity "artwork";
+        dc:title "Tomb of Jack the Ripper";
+        ead:genreform "Surrealism";
+        rdfs:seeAlso "https://en.wikipedia.org/wiki/Surrealism";
+        dc:publisher "Goteborgs stadsmuseum".
+     
+
+
+&lt;person/marcel_marien&gt;
+        rdf:type foaf:Person;
+        owl:sameAs dbr:Marcel_Marien;
+        dc:creator "Montelius Olle";
+        gn:wikipediaArticle "https://en.wikipedia.org/wiki/Marcel_Mari%C3%Abn".
+
+
+&lt;concept/jack_the_ripper&gt;
+        owl:Class crm:E73_Information_Object;
+        crm:P15_was_influenced_by "Whitechapel Murders";
+        rdfs:subClassOf skos:Concept;
+        skos:related "populer culture";
+        dc:date "1888";
+        rdf:label "Jack the Ripper";
+        rdfs:comment "Artwork created by Belgian Surrealist artist, Marcel Marien in 1976, inspired by the Jack the Ripper murders.";
+        dc:creator "Marcel Marien";
+        foaf:isPrimaryTopicOf "https://www.tate.org.uk/art/artworks/marien-the-tomb-of-jack-the-ripper-t12048";
+        gn:wikipediaArticle "https://en.wikipedia.org/wiki/Marcel_Mari%C3%Abn".
+								</code>
+							</pre>
+						</div>
+					</section>
+
+			</div>
+
+
+		<!-- Scripts -->
+			<script type="text/javascript" src="https://app.diagrams.net/js/viewer.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 </div>
   <div class="heading">
     <h3><span>RDF GRAPH</span></h3>
