@@ -3,7 +3,6 @@
 @prefix dbc: <hthttp://dbpedia.org/resource/Category/>.
 @prefix dbr: <http://dbpedia.org/resource/>.
 @prefix dc: <http://purl.org/dc/terms/>.
-@prefix dc: <http://purl.org/dc/terms/creator/>.
 @prefix ead: <http://www.loc.gov/ead/>.
 @prefix edm: <https://www.europeana.eu/en/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
@@ -14,8 +13,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix wn: <http://www.w3.org/2006/03/wn/wn20/schema/>.
 @prefix gn: <http://www.geonames.org/>.
-@prefix dc: <http://purl.org/dc/elements/1.1/publisher>.
-
 
 
 
@@ -32,7 +29,7 @@
         ead:year "2002".
 
 <object/Statue>
-        dcterms:medium "5 tin cans, shell, fur, chipboard, wood and Perspex.";
+        dc:medium "5 tin cans, shell, fur, chipboard, wood and Perspex." ;
         crm:entity "artwork";
         dc:title "Tomb of Jack the Ripper";
         ead:genreform "Surrealism";

@@ -424,9 +424,12 @@
     <p><a href="assets/img/RDF raw file.txt">Click here to view the RAW file.</a></p>
     <!-- Wrapper -->
 			<div id="wrapper">
-				<!-- Turtle -->
-				<section id="main" class="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
 						<div class="inner">
+							<h1 class="major">RDF</h1>
+							
 							<pre style="background-color:antiquewhite">
 								<code class="prettyprint">
 @base &lt;http://jacktheripper-1888.github.io/&gt;.
@@ -434,20 +437,16 @@
 @prefix dbc: &lt;hthttp://dbpedia.org/resource/Category/&gt;.
 @prefix dbr: &lt;http://dbpedia.org/resource/&gt;.
 @prefix dc: &lt;http://purl.org/dc/terms/&gt;.
-@prefix dc: &lt;http://purl.org/dc/terms/creator/&gt;.
 @prefix ead: &lt;http://www.loc.gov/ead/&gt;.
 @prefix edm: &lt;https://www.europeana.eu/en/&gt;.
 @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt;.
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt;.
 @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;.
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;.
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#>&gt;.
 @prefix skos: &lt;http://www.w3.org/2008/05/skos#&gt;.
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;.
 @prefix wn: &lt;http://www.w3.org/2006/03/wn/wn20/schema/&gt;.
 @prefix gn: &lt;http://www.geonames.org/&gt;.
-@prefix dc: &lt;http://purl.org/dc/elements/1.1/publisher&gt;.
-
-
 
 
 &lt;production/Statue&gt;
@@ -458,20 +457,19 @@
         gn:name "London";
         edm:provider "Tate";
         dc:creator "Marcel Marien";
+        dc:isPartOf "http://kulturarvsdata.se/GSM/samling/7";
         ead:date "1976";
         ead:year "2002".
 
 &lt;object/Statue&gt;
-        rdf:type "statue";
-        dc:medium "5 tin cans,shell, fur, chipboard, wood, and Perspex";
+        dc:medium "5 tin cans, shell, fur, chipboard, wood and Perspex." ;
         crm:entity "artwork";
         dc:title "Tomb of Jack the Ripper";
         ead:genreform "Surrealism";
         rdfs:seeAlso "https://en.wikipedia.org/wiki/Surrealism";
-        dc:publisher "Tate,London".
-     
-
-
+        dc:publisher "Tate,London";
+        edm:isRelatedTo "Jack the Ripper".
+        
 &lt;person/marcel_marien&gt;
         rdf:type foaf:Person;
         owl:sameAs dbr:Marcel_Marien;
@@ -490,10 +488,27 @@
         dc:creator "Marcel Marien";
         foaf:isPrimaryTopicOf "https://www.tate.org.uk/art/artworks/marien-the-tomb-of-jack-the-ripper-t12048";
         gn:wikipediaArticle "https://en.wikipedia.org/wiki/Marcel_Mari%C3%Abn".
+
+
 								</code>
 							</pre>
 						</div>
 					</section>
+
+			</div>
+
+		
+
+		<!-- Scripts -->
+			<script type="text/javascript" src="https://app.diagrams.net/js/viewer.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 
 			</div>
 
